@@ -1,0 +1,10 @@
+@font-face {
+    font-family: pixelFont;
+    src: url(fonts/FFFFORWA.TTF);
+}
+
+body{
+    background-color: #ffc051;
+    font-family: pixelFont;
+    text-align: center;
+}

@@ -1,0 +1,231 @@
+@font-face {
+    font-family: pixelFont;
+    src: url(fonts/FFFFORWA.TTF);
+}
+
+/* Estilos generales */
+body {
+    font-family: pixelFont, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #660f31;
+}
+
+/* Estilos del encabezado */
+header {
+    background-color: #09010d;
+    color: #fff;
+    padding: 1.5rem 0;
+    border: 0.5rem solid #ff0546;
+}
+
+/* Contenedor */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos del título */
+#title {
+    margin: 0;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    color: #ff0546;
+    font-family: pixelFont;
+    text-align: center;
+}
+
+/* Estilos del subtítulo */
+#subtitle {
+    font-size: 1.5rem;
+    font-family: monospace;
+    text-align: center;
+}
+
+/* Estilos del contenido */
+#bodycontent {
+    border: 0.5rem solid #17001d;
+    border-top: none;
+    background-image: url('images/space.png');
+    background-size: cover;
+}
+
+/* Estilos del héroe */
+#hero {
+    color: #fff;
+    padding: 3rem 0 0 0;
+    text-align: center;
+}
+
+#description {
+    background-color: rgba(49, 41, 131, 0.506);
+    display: inline-block;
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+/* Estilos de navegación */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #e2f3e4;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+/* Estilos de sección */
+section {
+    padding: 20px 0;
+    color: white;
+}
+
+/* Estilos del portafolio */
+#portfolio {
+    border-bottom: 0.5rem solid black;
+    font-size: 1.5rem;
+    color: white;
+    padding-bottom: 2rem;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.grid-item {
+    width: 100%;
+    border: 0.4rem solid black;
+    position: relative;
+}
+
+.grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Centrado de la lista de herramientas */
+.list-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Estilos de la lista de herramientas */
+#tools {
+    margin-right: 6rem;
+    padding: 0;
+}
+
+.tools-item {
+    padding-bottom: 1rem;
+    list-style: none;
+}
+
+/* Estilos de la sección 'Sobre Mí' */
+#about-me {
+    border: 0.4rem solid black;
+    border-radius: 0.3rem;
+    background-color: rgba(176, 196, 222, 0.186);
+    padding: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Estilos de contacto */
+#contact {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    font-family: monospace;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#contact-list a {
+    font-size: 1.5rem;
+}
+
+/* Efecto de escritura */
+.typing-demo {
+    width: 30ch;
+    animation: typing 2s steps(30), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-size: 1.5em;
+    margin: 0 auto;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
+}
+
+/* Estilos del pie de página */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    #title {
+        font-size: 2rem;
+    }
+
+    #subtitle {
+        font-size: 1.2rem;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .list-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #tools {
+        margin-right: 0;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .typing-demo {
+        font-size: 1.2em;
+    }
+
+    #description {
+        font-size: 0.9rem;
+        padding: 0.8rem;
+    }
+}

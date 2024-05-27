@@ -1,0 +1,20 @@
+@font-face {
+    font-family: pixelFont;
+    src: url(fonts/FFFFORWA.TTF);
+}
+
+body {
+    font-family: pixelFont;
+    background-color: #ffa2ee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  h2{
+    font-size: 1rem;
+    margin: 0;
+    color: rgb(90, 101, 112);
+  }
+  
