@@ -3,8 +3,24 @@
     src: url(fonts/FFFFORWA.TTF);
 }
 
-body{
+body {
     background-color: #ffc051;
     font-family: pixelFont;
     text-align: center;
+}
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+iframe {
+    margin-bottom: 20px;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
 }
