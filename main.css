@@ -3,7 +3,6 @@
     src: url(fonts/FFFFORWA.TTF);
 }
 
-/* Estilos generales */
 body {
     font-family: pixelFont, Arial, sans-serif;
     margin: 0;
@@ -11,7 +10,6 @@ body {
     background-color: #660f31;
 }
 
-/* Estilos del encabezado */
 header {
     background-color: #09010d;
     color: #fff;
@@ -19,7 +17,6 @@ header {
     border: 0.5rem solid #ff0546;
 }
 
-/* Contenedor */
 .container {
     width: 90%;
     max-width: 1200px;
@@ -27,7 +24,6 @@ header {
     padding: 20px;
 }
 
-/* Estilos del título */
 #title {
     margin: 0;
     margin-bottom: 1rem;
@@ -37,14 +33,12 @@ header {
     text-align: center;
 }
 
-/* Estilos del subtítulo */
 #subtitle {
     font-size: 1.5rem;
     font-family: monospace;
     text-align: center;
 }
 
-/* Estilos del contenido */
 #bodycontent {
     border: 0.5rem solid #17001d;
     border-top: none;
@@ -52,11 +46,15 @@ header {
     background-size: cover;
 }
 
-/* Estilos del héroe */
 #hero {
     color: #fff;
-    padding: 3rem 0 0 0;
+    padding: 0;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 30vh;
 }
 
 #description {
@@ -66,7 +64,16 @@ header {
     padding: 1rem;
 }
 
-/* Estilos de navegación */
+.typing-demo {
+    width: 20ch;
+    animation: typing 2s steps(20), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-size: 2em;
+    margin: 0 auto;
+}
+
 nav ul {
     list-style: none;
     padding: 0;
@@ -85,13 +92,11 @@ nav ul li a {
     font-size: 1.2rem;
 }
 
-/* Estilos de sección */
 section {
     padding: 20px 0;
     color: white;
 }
 
-/* Estilos del portafolio */
 #portfolio {
     border-bottom: 0.5rem solid black;
     font-size: 1.5rem;
@@ -117,14 +122,12 @@ section {
     object-fit: cover;
 }
 
-/* Centrado de la lista de herramientas */
 .list-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-/* Estilos de la lista de herramientas */
 #tools {
     margin-right: 6rem;
     padding: 0;
@@ -135,7 +138,6 @@ section {
     list-style: none;
 }
 
-/* Estilos de la sección 'Sobre Mí' */
 #about-me {
     border: 0.4rem solid black;
     border-radius: 0.3rem;
@@ -148,7 +150,6 @@ section {
     text-align: center;
 }
 
-/* Estilos de contacto */
 #contact {
     margin-top: 1rem;
     padding-top: 1rem;
@@ -161,15 +162,14 @@ section {
     font-size: 1.5rem;
 }
 
-/* Efecto de escritura */
-  .typing-demo {
+.typing-demo {
     width: 20ch;
     animation: typing 2s steps(20), blink .5s step-end infinite alternate;
     white-space: nowrap;
     overflow:hidden;
     border-right: 3px solid;
-    font-size: 2em;
-  }
+    font-size: 2rem;
+}
 
 @keyframes typing {
     from {
@@ -183,7 +183,6 @@ section {
     }
 }
 
-/* Estilos del pie de página */
 footer {
     background-color: #333;
     color: #fff;
@@ -191,14 +190,13 @@ footer {
     padding: 20px 0;
 }
 
-/* Estilos responsivos */
 @media (max-width: 768px) {
     #title {
         font-size: 2rem;
     }
 
     #subtitle {
-        font-size: 1.2rem;
+        font-size: 2rem;
     }
 
     nav ul li {
@@ -227,4 +225,8 @@ footer {
         font-size: 0.9rem;
         padding: 0.8rem;
     }
+}
+
+#subtitle{
+    font-size: 2rem;
 }
